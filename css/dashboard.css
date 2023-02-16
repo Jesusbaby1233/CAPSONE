@@ -1,0 +1,299 @@
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }    
+}
+body{
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    /* height: 100%; */
+    position: absolute;
+}
+.logo{
+  padding-left: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* padding-bottom: 4rem; */
+
+}
+.logo > span{
+  color: blue;
+  font-weight: 700;
+  /* padding-left: 2rem; */
+}
+    
+    /* header styles */
+    
+.mobileheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    left: 20%;
+    right: 0;
+    top: 0;
+}
+    
+.mobileheader #menutoggle{
+    display: none;
+}
+    
+    /* hamburger container styles */
+ .mobileheader .menubuttoncontainer{
+    display: flex;
+    flex-direction: column;
+    width: 1.8rem;
+    height: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    /* /* list-style-type: none; */
+}
+.mobileheader .menubuttoncontainer .menubutton, 
+.menubutton::before, 
+.menubutton::after{
+    width: 1.8rem;
+    height: 2px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    transition: transform 400ms cubic-bezier(0.23,1,0.32,1);
+    z-index: 1000;
+}
+.mobileheader .menubuttoncontainer .menubutton, 
+.menubutton::before{
+    content: "";
+    margin-block-start: -8px;
+}
+.mobileheader .menubuttoncontainer .menubutton, 
+.menubutton::after{
+    content: "";
+    margin-block-start: 8px;
+}
+    /* INACTIVE STATES */
+    /* Navigation bar on mobile devices */
+.mobileheader #menutoggle ~ .nav{
+    background-color: rgb(0, 0, 0,0.5);
+    left:0;
+    position: fixed;
+    right:0;
+    top:0;
+    /* padding-inline: 1rem; */
+    bottom: 0;
+    color: rgb(29, 27, 27);
+    transform: translateX(120%);
+    transition: tranform 500ms cubic-bezier(0.5,0,0.5,1);
+    z-index: 10;
+    
+}
+.mobileheader #menutoggle ~ .nav .menu{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 10%;
+    /* padding-inline-start: 1rem; */
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding-block-start: 3rem;
+    background-color: var(--Almost_White);
+    /* transition: transform 400ms ease-in-out; */
+}
+.mobileheader .nav .menu{
+    list-style: none;
+}
+.mobileheader #menutoggle ~ .nav .menu>li{
+    /* height: max-content; */
+    /* border-bottom: 1px solid gray; */
+    padding-block: 0.7rem;
+}
+a{
+    text-decoration: none;
+    color: #151617;
+    font-size: 1rem;
+    /* color: var(--Almost_White); */
+}
+.mobileheader .nav .mobile.loginreg{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 10% auto;
+    position: relative;
+    
+}
+.mobileheader .nav .mobile.loginreg a{
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+.mobileheader .nav .mobile.loginreg .register{
+        /* box-sizing: border-box; */
+    background-color: var(--Almost_Black);
+    border: 10px;
+    border-radius: 15px;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    color: gray;
+}
+    
+    
+    /* :active */
+    /* active hamburger when checked  */
+#menutoggle:checked + .menubuttoncontainer .menubutton::before{
+    margin-block-start: 0;
+    transform: rotate(-405deg);
+}
+#menutoggle:checked + .menubuttoncontainer .menubutton{
+    background-color: rgb(255, 255, 255, 0);
+}
+#menutoggle:checked + .menubuttoncontainer .menubutton::after{
+    margin-block-start: 0;
+    transform: rotate(405deg);
+}
+    /* ACTIVE MENU  */
+.mobileheader #menutoggle:checked ~ .nav{
+       
+    transform: translateX(40%);
+        
+}
+.mobileheader #menutoggle:checked ~ .nav .menu{
+    transform: translateX(0%);
+}
+.navitem .nav_link + .sublist{
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem, 0.8rem; */
+    justify-content: center;
+    align-items: start;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1000ms ease-in-out;
+}
+.navitem .navlink {
+        /* padding-block: 0.8rem; */
+    padding-inline-start: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+  display: flex;
+}
+.nav .menu .navitem:hover .navlink {
+  height: max-content;
+}
+.nav .menu{
+  padding-block: 0.8rem;
+}
+.nav .navitem:hover .navlink {
+  transform: rotate(180deg);
+  transition: transform 500ms ease-in-out;
+}
+.last{
+  border: solid blue;
+  background-color: blue;
+  border-radius: 8px;
+  margin-top: 6rem;
+  padding-inline: 2rem;
+  padding-block: 0.5rem ;
+
+}
+.login{
+  color: rgb(230, 203, 203);
+  font-weight: 600;
+}
+.sect h2{
+  display: flex;
+  justify-content: center; 
+  position: relative;
+  margin-left: 10rem; 
+  align-items: center;
+  padding: 4rem;
+  
+}

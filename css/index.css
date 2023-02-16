@@ -1,0 +1,669 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.mainheader{
+    background-color: rgb(236, 236, 236);
+}
+.logo{
+    padding-left: 8rem;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.logo > span{
+    color: blue;
+    font-weight: 700;
+}
+.nav{
+    font-size: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding-block: 1rem;
+    
+}
+.separator{
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    gap: 2rem; 
+    font-size: 1.2rem;
+    
+    list-style: none;
+    padding-left: 2rem;
+    
+    
+
+}
+.menu2{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    /* color: black; */
+}
+.button{
+    margin-top: 8px;
+    padding: 10px;
+    padding-inline: 3rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background-color: blue;
+    color: beige;
+    border: 1px;
+    cursor: pointer;
+    font-style: none;  
+}
+.button:hover{
+    background-color: orangered;
+    color: beige;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding-block-start: 2rem;
+    padding-inline: 6rem ;
+
+}
+img{
+    padding-top: 2rem;
+    border-radius: 10px 10px 20px 20px;
+    
+}
+.bigtxt{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 4rem;
+}
+.smalltxt{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: gray;
+    padding-bottom: 2rem;
+
+
+}
+.getstart{
+    margin-top: 4rem;
+    border: 1px solid orangered;
+    padding: 10px;
+    padding-inline: 5rem;
+    border-radius: 8px;
+    background-color: orangered;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    
+}
+.space{
+    height: 1rem;
+    background-color: gray;
+
+}
+footer{
+    background-color: rgb(236, 236, 236);
+    justify-content: space-around;
+    display: flex;
+    
+}
+.log{
+    padding-left: 7rem;
+    padding-top: 1.5rem;
+    display: flex;
+    
+}
+.contact{
+    padding-left: 10rem;
+}
+li{
+    list-style: none;
+}
+.li{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    color: rgb(55, 54, 54);
+}
+.add{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(55, 54, 54);
+}
+.cap{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(55, 54, 54);
+}
+
+.allnav{
+    justify-content: space-between;
+    display: flex;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+
+}
+.how{
+    padding-left: 3rem;
+    padding-right: 2rem;
+    display: list-item;
+    list-style: none;
+}
+.howitwork{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: orangered;
+
+}
+i{
+    display: flex;
+    color: orangered;
+    font-size: 5rem;
+}
+@media(min-width: 375px){
+    .logo{
+        padding-left: 1rem;
+        font-size: 0.6rem;
+        font-weight: 650;
+    
+    }
+    .logo > span{
+        color: orangered;
+        font-weight: 650;
+    }       
+    .nav{
+        font-size: 0.2rem;
+        display: flex;
+        gap: 0.4rem;
+        justify-content: space-evenly;
+        padding-block: 0.5rem;
+        
+    }
+    .separator{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu{
+        display: flex;
+        gap: 1rem; 
+        font-size: 0.6rem;
+        list-style: none;
+        padding-left: 1rem;
+    }
+    .menu2{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        font-size: 0.6rem;
+        font-weight: 400;
+        padding-right: 4rem;
+    
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        /* color: black; */
+    }
+    .button{
+        margin-top: 8px;
+        padding: 5px;
+        padding-inline: 1rem;
+        border-radius: 4px;
+        font-size: 0.6rem;
+        background-color: orangered;
+        color: beige;
+        /* border: 1px; */
+        cursor: pointer;
+        font-style: none;  
+    }
+    .button:hover{
+        background-color: blue;
+        color: beige;
+    }
+    .main{
+        display: block;
+        justify-content: center;
+        padding-inline: 2rem;
+        align-items: center;
+    
+    }
+    img{
+        padding-top: 2rem;
+        border-radius: 10px 10px 20px 20px;
+        height: 60vh;
+        width: 100%;
+        
+        
+    }
+    .bigtxt{
+        
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    .smalltxt{
+        font-size: 1rem;
+        font-weight: 400;
+        color: gray;
+        padding-bottom: 1rem;
+    
+    
+    }
+    .getstart{
+        margin-top: 3rem;
+        border: 1px solid blue;
+        padding: 4px;
+        padding-inline: 3rem;
+        border-radius: 8px;
+        background-color: blue;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: normal;
+        margin-bottom: 1.5rem;
+        
+        
+    }
+    .space{
+        height: 1rem;
+        background-color: gray;
+    
+    }
+    footer{
+        background-color: rgb(236, 236, 236);
+        justify-content: center;
+        display: block;
+        align-items: center;
+        
+    }
+    
+    .log{
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        display: flex;
+        
+    }
+    .contact{
+        padding-left: 3rem;
+    }
+    li{
+        list-style: none;
+    }
+    .li{
+        font-size: 1rem;
+        font-weight:500;
+        padding: 0.4rem;
+        color: rgb(55, 54, 54);
+    }
+    .add{
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgb(55, 54, 54);
+    }
+    .cap{
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgb(55, 54, 54);
+    }
+    
+    .allnav{
+        justify-content: center;
+        display:  block;
+        align-items: center;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    
+    }
+    .how{
+        padding-left: 2rem;
+        padding-right: 1rem;
+        display: list-item;
+        list-style: none;
+    }
+    .howitwork{
+        font-size: 1rem;
+        font-weight: 600;
+        color: orangered;
+    
+    }
+}
+
+/*TAB VIEW*/
+@media (min-width: 756px){
+    .logo{
+        padding-left: 4rem;
+        font-size: 0.8rem;
+        font-weight: 650;
+    
+    }
+    .logo > span{
+        color: orangered;
+        font-weight: 650;
+    }       
+    .nav{
+        font-size: 0.25rem;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-around;
+        padding-block: 0.5rem;
+        
+    }
+    .separator{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu{
+        display: flex;
+        gap: 1rem; 
+        font-size: 0.6rem;
+        list-style: none;
+        padding-left: 1rem;
+    }
+    .menu2{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        font-size: 0.6rem;
+        font-weight: 400;
+        padding-right: 4rem;
+    
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        /* color: black; */
+    }
+    .button{
+        margin-top: 8px;
+        padding: 5px;
+        padding-inline: 1rem;
+        border-radius: 4px;
+        font-size: 0.6rem;
+        background-color: orangered;
+        color: beige;
+        /* border: 1px; */
+        cursor: pointer;
+        font-style: none;  
+    }
+    .button:hover{
+        background-color: blue;
+        color: beige;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 2rem;
+    
+    }
+    img{
+        padding-top: 2rem;
+        border-radius: 10px 10px 20px 20px;
+        height: 40%;
+        width: 40%;
+        
+        
+    }
+    .bigtxt{
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-bottom: 2.5rem;
+    }
+    .smalltxt{
+        font-size: 1rem;
+        font-weight: 400;
+        color: gray;
+        padding-bottom: 1.5rem;
+    
+    
+    }
+    .getstart{
+        margin-top: 3rem;
+        border: 1px solid blue;
+        padding: 4px;
+        padding-inline: 2rem;
+        border-radius: 8px;
+        background-color: blue;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: normal;
+        
+    }
+    .space{
+        height: 1rem;
+        background-color: gray;
+    
+    }
+    footer{
+        background-color: rgb(236, 236, 236);
+        justify-content: space-between;
+        display: flex;
+        
+    }
+    .log{
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        display: flex;
+        
+    }
+    .contact{
+        padding-left: 3rem;
+    }
+    li{
+        list-style: none;
+    }
+    .li{
+        font-size: 0.5rem;
+        font-weight:500;
+        padding: 0.4rem;
+        color: rgb(55, 54, 54);
+    }
+    .add{
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: rgb(55, 54, 54);
+    }
+    .cap{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: rgb(55, 54, 54);
+    }
+    
+    .allnav{
+        justify-content: space-between;
+        display: flex;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    
+    }
+    .how{
+        padding-left: 2rem;
+        padding-right: 1rem;
+        display: list-item;
+        list-style: none;
+    }
+    .howitwork{
+        font-size: 0.5rem;
+        font-weight: 600;
+        color: orangered;
+    
+    }
+}
+@media (min-width: 1024px){
+    .logo{
+        padding-left: 6rem;
+        font-size: 1rem;
+        font-weight: 650;
+    
+    }
+    .logo > span{
+        color: blue;
+        font-weight: 650;
+    }       
+    .nav{
+        font-size: 0.4rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        padding-block: 0.5rem;
+        
+    }
+    .separator{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu{
+        display: flex;
+        gap: 1rem; 
+        font-size: 0.8rem;
+        list-style: none;
+        padding-left: 1.8rem;
+    }
+    .menu2{
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding-right: 8rem;
+    
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        /* color: black; */
+    }
+    .button{
+        margin-top: 8px;
+        padding: 8px;
+        padding-inline: 2rem;
+        border-radius: 7px;
+        font-size: 0.8rem;
+        background-color: blue;
+        color: beige;
+        /* border: 1px; */
+        cursor: pointer;
+        font-style: none;  
+    }
+    .button:hover{
+        background-color: orangered;
+        color: beige;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        padding-block-start: 0.2rem;
+        padding-inline: 5rem;
+    
+    }
+    img{
+        padding-top: 2rem;
+        border-radius: 10px 10px 20px 20px;
+        height: 60vh;
+    }
+    .bigtxt{
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 2.5rem;
+    }
+    .smalltxt{
+        font-size: 1rem;
+        font-weight: 400;
+        color: gray;
+        padding-bottom: 1.5rem;
+    
+    
+    }
+    .getstart{
+        margin-top: 3rem;
+        border: 1px solid orangered;
+        padding: 6px;
+        padding-inline: 3rem;
+        border-radius: 8px;
+        background-color: orangered;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: normal;
+        
+    }
+    .space{
+        height: 1rem;
+        background-color: gray;
+    
+    }
+    footer{
+        background-color: rgb(236, 236, 236);
+        justify-content: space-between;
+        display: flex;
+        
+    }
+    .log{
+        padding-left: 4rem;
+        padding-top: 1.5rem;
+        display: flex;
+        
+    }
+    .contact{
+        padding-left: 4rem;
+    }
+    li{
+        list-style: none;
+    }
+    .li{
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.5rem;
+        color: rgb(55, 54, 54);
+    }
+    .add{
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(55, 54, 54);
+    }
+    .cap{
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(55, 54, 54);
+    }
+    
+    .allnav{
+        justify-content: space-between;
+        display: flex;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    
+    }
+    .how{
+        padding-left: 2rem;
+        padding-right: 1rem;
+        display: list-item;
+        list-style: none;
+    }
+    .howitwork{
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: orangered;
+    
+    }
+} 

@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(168, 67, 177) ;
+    color: beige;
+}
+
+.text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25%;
+    gap: 1rem;
+}
+.text > h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* gap: 8px; */
+}
+p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+/* .main{
+    background-color: rgb(106, 34, 34);
+
+} */
